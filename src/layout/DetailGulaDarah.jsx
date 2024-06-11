@@ -4,13 +4,14 @@ import CardBlood from '../components/CardBlood';
 import DoughnutChart from '../components/DoughnutChart';
 import LineChart from '../components/LineChart';
 import CardRekomendasi from '../components/CardRekomendasi';
+import TabelGulaDarah from '../components/TabelGulaDarah';
 
-const Dashboard = () => {
+const DetailGulaDarah = () => {
   return (
     <div className="flex flex-col px-10">
       <div className="flex justify-between items-center">
         <div className="flex flex-col">
-          <h1 className="text-[32px] font-bold">Dashboard</h1>
+          <h1 className="text-[32px] font-bold">Detail Gula Darah</h1>
           <p className="text-[#a3a3a3] font-medium">
             Hi, Farhan. Welcome back to GulaSehat!
           </p>
@@ -56,29 +57,11 @@ const Dashboard = () => {
           </div>
         </div>
       </section>
-      {/* Rekomendasi makanan */}
-      <section className="my-9">
-        <p className="text-[#464255] text-[32px] font-semibold">
-          Rekomendasi Makanan
-        </p>
-        <div className="flex gap-24 mt-5 max-w-7xl">
-          <CardRekomendasi />
-          <CardRekomendasi />
-          <CardRekomendasi />
-        </div>
-      </section>
-      <section className="my-9">
-        <p className="text-[#464255] text-[32px] font-semibold">
-          Rekomendasi Aktivitas
-        </p>
-        <div className="flex gap-24 mt-5 max-w-7xl">
-          <CardRekomendasi />
-          <CardRekomendasi />
-          <CardRekomendasi />
-        </div>
+      <section>
+        <TabelGulaDarah />
       </section>
     </div>
   );
 };
 
-export default Dashboard;
+export default DetailGulaDarah;
